@@ -1,7 +1,29 @@
 aid: booko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/booko.png
 name: Booko
-description: Booko is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Booko is an Australian book, eBook, audiobook, DVD, music and collectibles
+  price-comparison service operating since 2007. It aggregates new and used
+  prices across many online retailers and regions, calculates shipping, and
+  converts international prices to the shopper's local currency to surface the
+  cheapest place to buy a title. Booko also offers shopping lists with bundled
+  shipping calculations, barcode scanning, reading lists, price alerts and
+  notifications. It is a consumer-facing comparison site rather than a retailer
+  or a public API provider, earning referral fees from partner shops (including
+  Amazon Associates) when shoppers buy through its links. Booko is a solo
+  developer-run product surfaced through the API Evangelist network as a
+  Y Combinator portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/booko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Books
+- Price Comparison
+- Ecommerce
+- Retail
+- Shopping
+- Media
+- Australia
 apis: []
+common:
+- type: DomainSecurity
+  url: security/booko-domain-security.yml
+- type: Website
+  url: https://booko.com.au/
+- type: About
+  url: https://booko.com.au/about
+- type: Blog
+  url: https://blog.booko.com.au/
+- type: Blog
+  name: Booko Tech Blog
+  url: https://tech.booko.info/
+- type: GitHubOrganization
+  url: https://github.com/dkam
+- type: Support
+  name: FAQ
+  url: https://booko.com.au/faq
+- type: TermsOfService
+  url: https://booko.com.au/tos
+- type: PrivacyPolicy
+  url: https://booko.com.au/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
